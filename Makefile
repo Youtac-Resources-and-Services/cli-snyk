@@ -3,7 +3,7 @@
 # This Makefile is only for building release artifacts. Use `npm run` for CLIv1 scripts.
 #
 # Documentation: https://www.gnu.org/software/make/manual/make.html
-#
+
 
 #use bash instead of sh
 export SHELL=/bin/bash
