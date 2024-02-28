@@ -186,11 +186,7 @@ DepGraph end`,
     });
 
     it('should print sbom for image', async () => {
-      const {
-        code,
-        stdout,
-        stderr,
-      } = await runSnykCLIWithDebug(
+      const { code, stdout, stderr } = await runSnykCLIWithDebug(
         `container sbom --org=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee --format=spdx2.3+json ${TEST_DISTROLESS_STATIC_IMAGE}`,
         { env },
       );

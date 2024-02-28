@@ -33,9 +33,7 @@ describe('config', () => {
       SNYK_API_REST_URL: 'http://localhost:' + port + baseURL,
     };
 
-    const {
-      code,
-    } = await runSnykCLI(
+    const { code } = await runSnykCLI(
       `apps create --org=${testData.orgId} --name=${testData.appName} --redirect-uris=${testData.redirectURIs} --scopes=${testData.scopes} --experimental`,
       { env },
     );
@@ -49,9 +47,7 @@ describe('config', () => {
       SNYK_API_REST_URL: 'http://localhost:' + port + '/wrongbase',
     };
 
-    const {
-      code,
-    } = await runSnykCLI(
+    const { code } = await runSnykCLI(
       `apps create --org=${testData.orgId} --name=${testData.appName} --redirect-uris=${testData.redirectURIs} --scopes=${testData.scopes} --experimental`,
       { env },
     );
@@ -65,9 +61,7 @@ describe('config', () => {
       SNYK_API_V3_URL: 'http://localhost:' + port + baseURL,
     };
 
-    const {
-      code,
-    } = await runSnykCLI(
+    const { code } = await runSnykCLI(
       `apps create --org=${testData.orgId} --name=${testData.appName} --redirect-uris=${testData.redirectURIs} --scopes=${testData.scopes} --experimental`,
       { env },
     );
@@ -82,9 +76,7 @@ describe('config', () => {
       SNYK_API_V3_URL: 'http://localhost:' + port + baseURL,
     };
 
-    const {
-      code,
-    } = await runSnykCLI(
+    const { code } = await runSnykCLI(
       `apps create --org=${testData.orgId} --name=${testData.appName} --redirect-uris=${testData.redirectURIs} --scopes=${testData.scopes} --experimental`,
       { env },
     );

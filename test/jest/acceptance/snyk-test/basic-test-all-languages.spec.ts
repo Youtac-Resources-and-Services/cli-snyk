@@ -75,7 +75,7 @@ describe('`snyk test` of basic projects for each language/ecosystem', () => {
     const project = await createProjectFromWorkspace('pip-app');
     let pythonCommand = 'python';
 
-    await runCommand(pythonCommand, ['--version']).catch(function() {
+    await runCommand(pythonCommand, ['--version']).catch(function () {
       pythonCommand = 'python3';
     });
 
@@ -121,7 +121,7 @@ describe('`snyk test` of basic projects for each language/ecosystem', () => {
     const project = await createProjectFromWorkspace('pip-app');
     let wrongPythonCommand = 'pthon';
 
-    await runCommand(wrongPythonCommand, ['--version']).catch(function() {
+    await runCommand(wrongPythonCommand, ['--version']).catch(function () {
       wrongPythonCommand = 'pthon3';
     });
 
@@ -197,7 +197,7 @@ describe('`snyk test` of basic projects for each language/ecosystem', () => {
     'run `snyk test` on a nuget project using v2 dotnet runtime resolution logic for $fixture',
     async ({ fixture }) => {
       const prerequisite = await runCommand('dotnet', ['--version']).catch(
-        function() {
+        function () {
           return { code: 1, stderr: '', stdout: '' };
         },
       );
@@ -227,7 +227,7 @@ describe('`snyk test` of basic projects for each language/ecosystem', () => {
 
   test('run `snyk test` on a nuget project using v2 dotnet runtime resolution logic with a custom output path', async () => {
     const prerequisite = await runCommand('dotnet', ['--version']).catch(
-      function() {
+      function () {
         return { code: 1, stderr: '', stdout: '' };
       },
     );
@@ -275,7 +275,7 @@ describe('`snyk test` of basic projects for each language/ecosystem', () => {
     'run `snyk test` on a nuget project using v2 dotnet runtime resolution logic with explicit target framework $targetFramework',
     async ({ targetFramework }) => {
       const prerequisite = await runCommand('dotnet', ['--version']).catch(
-        function() {
+        function () {
           return { code: 1, stderr: '', stdout: '' };
         },
       );
@@ -344,7 +344,7 @@ describe('`snyk test` of basic projects for each language/ecosystem', () => {
 
   test('run `snyk test` on a hex project', async () => {
     const prerequisite = await runCommand('mix', ['--version']).catch(
-      function() {
+      function () {
         return { code: 1, stderr: '', stdout: '' };
       },
     );
@@ -364,7 +364,7 @@ describe('`snyk test` of basic projects for each language/ecosystem', () => {
 
   test('run `snyk test` on a composer project', async () => {
     const prerequisite = await runCommand('composer', ['--version']).catch(
-      function() {
+      function () {
         return { code: 1, stderr: '', stdout: '' };
       },
     );
@@ -384,7 +384,7 @@ describe('`snyk test` of basic projects for each language/ecosystem', () => {
 
   test('run `snyk test` on a sbt project', async () => {
     const prerequisite = await runCommand('sbt', ['--version']).catch(
-      function() {
+      function () {
         return { code: 1, stderr: '', stdout: '' };
       },
     );
