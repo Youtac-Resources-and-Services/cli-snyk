@@ -79,6 +79,7 @@
     "bootstrap": "^5.3.3",
     "chalk": "^2.4.2",
     "cli-spinner": "0.2.10",
+    "commander": "^12.1.0",
     "configstore": "^5.0.1",
     "debug": "^4.1.1",
     "enquirer": "^2.3.6",
@@ -136,7 +137,8 @@
     "strip-ansi": "^6.0.1",
     "tar": "^6.1.2",
     "uuid": "^8.3.2",
-    "wrap-ansi": "^5.1.0"
+    "wrap-ansi": "^5.1.0",
+    "yargs": "^17.1.1-candidate.0"
   },
   "devDependencies": {
     "@nightwatch/mobile-helper": "^0.1.13",
@@ -150,6 +152,7 @@
     "@types/node": "^14.14.31",
     "@types/sarif": "^2.1.2",
     "@types/sinon": "^7.5.0",
+    "@types/yargs": "^17.0.32",
     "@typescript-eslint/eslint-plugin": "^4.30.0",
     "@typescript-eslint/parser": "^4.30.0",
     "ajv": "^6.12.6",
