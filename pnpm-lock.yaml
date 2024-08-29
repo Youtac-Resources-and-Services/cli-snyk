@@ -1,9 +1,29 @@
-lockfileVersion: '9.0'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-importers:
+devDependencies:
+  '@types/babel__preset-env':
+    specifier: ^7.9.7
+    version: 7.9.7
+  '@types/node':
+    specifier: ^22.5.1
+    version: 22.5.1
 
-  .: {}
+packages:
+
+  /@types/babel__preset-env@7.9.7:
+    resolution: {integrity: sha512-m63P4DQR9d0/g8GwRsmyizGqfCGWI6LVnuNg4OV8YhNM+VMBAepJ4394Z/rJA0pBYV+AXgFfHP4RiIlk9mYVVQ==}
+    dev: true
+
+  /@types/node@22.5.1:
+    resolution: {integrity: sha512-KkHsxej0j9IW1KKOOAA/XBA0z08UFSrRQHErzEfA3Vgq57eXIMYboIlHJuYIfd+lwCQjtKqUu3UnmKbtUc9yRw==}
+    dependencies:
+      undici-types: 6.19.8
+    dev: true
+
+  /undici-types@6.19.8:
+    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
+    dev: true
