@@ -3,5 +3,8 @@
   "devDependencies": {
     "@types/babel__preset-env": "^7.9.7",
     "@types/node": "^22.5.1"
+  },
+  "dependencies": {
+    "@snyk/protect": "^1.1293.0"
   }
 }
